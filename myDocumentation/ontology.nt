@@ -1,0 +1,323 @@
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO> <http://www.w3.org/2000/01/rdf-schema#label> "Massacre Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDate
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasIntervalStartDate
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasIntervalStartDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#TemporalEntity> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasMotivation
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasMotivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasMotivation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasMotivation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Reason> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasPlace
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasPlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Place> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasReceivedMisdirection
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasReceivedMisdirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasReceivedMisdirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasReceivedMisdirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Misdirection> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasWitnessed
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasWitnessed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasWitnessed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Massacre> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasWitnessed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAimedAtHit
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAimedAtHit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAimedAtHit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Massacre> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAimedAtHit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Target> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAnnouncedThrough
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAnnouncedThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAnnouncedThrough> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAnnouncedThrough> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#isOrganizedBy
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#isOrganizedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#isOrganizedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#isOrganizedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#isPubblicatedThrough
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#isPubblicatedThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#isPubblicatedThrough> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#isToldBy
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#isToldBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#isToldBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#isToldBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#itHappenedIn
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#itHappenedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#itHappenedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#itHappenedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Place> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#member
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#member> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#member> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Organization> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#toAccuse
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#toAccuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#toAccuse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Misdirection> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#toAccuse> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent> .
+# 
+# http://www.w3.org/2002/07/owl#topObjectProperty
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedBooks
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedBooks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedBooks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedBooks> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedEssays
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedEssays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedEssays> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedEssays> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDateAndTime
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDateAndTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDateAndTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDateAndTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity that interacts with the enviroment" .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Book
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Book> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Commoner
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Commoner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Commoner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Victim> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "A thing that happens or takes place, especially one of importance." .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#HistoricalPeriod
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#HistoricalPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#HistoricalPeriod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#TemporalEntity> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Massacre
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Massacre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Massacre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Massacre> <http://www.w3.org/2000/01/rdf-schema#comment> "This subclass wants to specifically represent an event that is a massacre. This is the focus of this ontology" .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Misdirection
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Misdirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Misdirection> <http://www.w3.org/2000/01/rdf-schema#comment> "The action or process of directing someone to the wrong place or in the wrong direction" .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newcast
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newcast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newcast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Television> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newspaper
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newspaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newspaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Organization
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Organization> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of people with common interests" .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "an individual" .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Place
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Place are usually determined by reference to the position of immoble objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks." .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Politcal
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Politcal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Politcal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Reason> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Radio
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Radio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Radio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Reason
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Reason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Reason> <http://www.w3.org/2000/01/rdf-schema#comment> "a cause, explanation, or justification for an event" .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Religious
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Religious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Religious> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Reason> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source> <http://www.w3.org/2000/01/rdf-schema#comment> "All the elements, physical and not, that represent, have described and are useful for the memory of the event itself." .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Target
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Target> <http://www.w3.org/2000/01/rdf-schema#comment> "A person, object, or place selected as the aim of an attack." .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Television
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Television> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Television> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#TemporalEntity
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Thing that can be contained within a period of time, or change in state" .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Victim
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Victim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Victim> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Witness
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Witness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Witness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#ArmedRevolutionaryNuclei
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#ArmedRevolutionaryNuclei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#ArmedRevolutionaryNuclei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Organization> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Bologna
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Bologna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Bologna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Place> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#FrancescaMambro
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#FrancescaMambro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#FrancescaMambro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#FrancescaMambro> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#member> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#ArmedRevolutionaryNuclei> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiCiavardini
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiCiavardini> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiCiavardini> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiCiavardini> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#member> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#TerzaPosizione> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiFioravanti
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiFioravanti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiFioravanti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiFioravanti> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#member> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#ArmedRevolutionaryNuclei> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#MassimoSparti
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#MassimoSparti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#MassimoSparti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Witness> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newspaper
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newspaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Politcal
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Politcal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Radio
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Radio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#RadioPopolare
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#RadioPopolare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#RadioPopolare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Radio> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#RadioPopolare> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasReceivedMisdirection> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#telephoneRecording> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#telephoneRecording> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#SpecialNewcast
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#SpecialNewcast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#SpecialNewcast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newcast> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#SpecialNewcast> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDate> "1980-08-02T12:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#Television
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#Television> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#TerzaPosizione
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#TerzaPosizione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#TerzaPosizione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Organization> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Massacre> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasMotivation> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Politcal> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasPlace> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Bologna> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasWitnessed> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#MassimoSparti> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAnnouncedThrough> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#SpecialNewcast> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#isOrganizedBy> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#FrancescaMambro> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#isOrganizedBy> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiCiavardini> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#isOrganizedBy> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiFioravanti> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#isToldBy> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newspaper> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#isToldBy> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Radio> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#isToldBy> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Television> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedBooks> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedEssays> "31"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDate> "1980-08-02T10:25:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#people
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#people> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#people> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent> .
+# 
+# http://www.semanticweb.org/mO/ontologies/2020/10/mO#telephoneRecording
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#telephoneRecording> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#Misdirection> .
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#telephoneRecording> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#toAccuse> <http://www.semanticweb.org/mO/ontologies/2020/10/mO#people> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO#> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises all phenomena, E5 Events and states, which happen over a limited extent in time.This extent in time must be contiguous, i.e., without gaps. In case the defining kinds of phenomena for an instance of E2 Temporal Entity cease to happen, and occur later again at another time, we regard that the former E2 Temporal Entity has ended and a new instance has come into existence. In more intuitive terms, the same event cannot happen twice."@en .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

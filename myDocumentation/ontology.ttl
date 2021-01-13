@@ -1,0 +1,360 @@
+@prefix : <http://www.semanticweb.org/mO/ontologies/2020/10/mO#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/mO/ontologies/2020/10/mO> .
+
+<http://www.semanticweb.org/mO/ontologies/2020/10/mO> rdf:type owl:Ontology ;
+                                                       rdfs:label "Massacre Ontology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDate
+:hasDate rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasIntervalStartDate
+:hasIntervalStartDate rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Event ;
+                      rdfs:range :TemporalEntity .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasMotivation
+:hasMotivation rdf:type owl:ObjectProperty ;
+               rdfs:domain :Event ;
+               rdfs:range :Reason .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasPlace
+:hasPlace rdf:type owl:ObjectProperty ;
+          rdfs:domain :Event ;
+          rdfs:range :Place .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasReceivedMisdirection
+:hasReceivedMisdirection rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Media ;
+                         rdfs:range :Misdirection .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasWitnessed
+:hasWitnessed rdf:type owl:ObjectProperty ;
+              rdfs:domain :Massacre ;
+              rdfs:range :Person .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAimedAtHit
+:isAimedAtHit rdf:type owl:ObjectProperty ;
+              rdfs:domain :Massacre ;
+              rdfs:range :Target .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAnnouncedThrough
+:isAnnouncedThrough rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Source ;
+                    rdfs:range :Media .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#isOrganizedBy
+:isOrganizedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain :Event ;
+               rdfs:range :Agent .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#isPubblicatedThrough
+:isPubblicatedThrough rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Source .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#isToldBy
+:isToldBy rdf:type owl:ObjectProperty ;
+          rdfs:domain :Event ;
+          rdfs:range :Source .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#itHappenedIn
+:itHappenedIn rdf:type owl:ObjectProperty ;
+              rdfs:domain :Event ;
+              rdfs:range :Place .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#member
+:member rdf:type owl:ObjectProperty ;
+        rdfs:domain :Person ;
+        rdfs:range :Organization .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#toAccuse
+:toAccuse rdf:type owl:ObjectProperty ;
+          rdfs:domain :Misdirection ;
+          rdfs:range :Agent .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdf:type owl:FunctionalProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedBooks
+:NumberOfPublishedBooks rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Source ;
+                        rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedEssays
+:NumberOfPublishedEssays rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Source ;
+                         rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDateAndTime
+:hasDateAndTime rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Event ;
+                rdfs:range xsd:dateTime .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent
+:Agent rdf:type owl:Class ;
+       rdfs:subClassOf owl:Thing ;
+       rdfs:comment "An entity that interacts with the enviroment" .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Book
+:Book rdf:type owl:Class ;
+      rdfs:subClassOf :Media .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Commoner
+:Commoner rdf:type owl:Class ;
+          rdfs:subClassOf :Victim .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf owl:Thing ;
+       rdfs:comment "A thing that happens or takes place, especially one of importance." .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#HistoricalPeriod
+:HistoricalPeriod rdf:type owl:Class ;
+                  rdfs:subClassOf :TemporalEntity .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Massacre
+:Massacre rdf:type owl:Class ;
+          rdfs:subClassOf :Event ;
+          rdfs:comment "This subclass wants to specifically represent an event that is a massacre. This is the focus of this ontology" .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media
+:Media rdf:type owl:Class ;
+       rdfs:subClassOf :Source .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Misdirection
+:Misdirection rdf:type owl:Class ;
+              rdfs:comment "The action or process of directing someone to the wrong place or in the wrong direction" .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newcast
+:Newcast rdf:type owl:Class ;
+         rdfs:subClassOf :Television .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newspaper
+:Newspaper rdf:type owl:Class ;
+           rdfs:subClassOf :Media .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:subClassOf :Agent ;
+              owl:disjointWith :Person ;
+              rdfs:comment "A group of people with common interests" .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf :Agent ;
+        rdfs:comment "an individual" .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Place
+:Place rdf:type owl:Class ;
+       rdfs:subClassOf owl:Thing ;
+       rdfs:comment "Place are usually determined by reference to the position of immoble objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks." .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Politcal
+:Politcal rdf:type owl:Class ;
+          rdfs:subClassOf :Reason .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Radio
+:Radio rdf:type owl:Class ;
+       rdfs:subClassOf :Media .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Reason
+:Reason rdf:type owl:Class ;
+        rdfs:comment "a cause, explanation, or justification for an event" .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Religious
+:Religious rdf:type owl:Class ;
+           rdfs:subClassOf :Reason .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source
+:Source rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ;
+        rdfs:comment "All the elements, physical and not, that represent, have described and are useful for the memory of the event itself." .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Target
+:Target rdf:type owl:Class ;
+        rdfs:comment "A person, object, or place selected as the aim of an attack." .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Television
+:Television rdf:type owl:Class ;
+            rdfs:subClassOf :Media .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#TemporalEntity
+:TemporalEntity rdf:type owl:Class ;
+                rdfs:comment "Thing that can be contained within a period of time, or change in state" .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Victim
+:Victim rdf:type owl:Class ;
+        rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Witness
+:Witness rdf:type owl:Class ;
+         rdfs:subClassOf :Person .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#ArmedRevolutionaryNuclei
+:ArmedRevolutionaryNuclei rdf:type owl:NamedIndividual ,
+                                   :Organization .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Bologna
+:Bologna rdf:type owl:NamedIndividual ,
+                  :Place .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#FrancescaMambro
+:FrancescaMambro rdf:type owl:NamedIndividual ,
+                          :Person ;
+                 :member :ArmedRevolutionaryNuclei .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiCiavardini
+:LuigiCiavardini rdf:type owl:NamedIndividual ,
+                          :Person ;
+                 :member :TerzaPosizione .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiFioravanti
+:LuigiFioravanti rdf:type owl:NamedIndividual ,
+                          :Person ;
+                 :member :ArmedRevolutionaryNuclei .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#MassimoSparti
+:MassimoSparti rdf:type owl:NamedIndividual ,
+                        :Witness .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newspaper
+:Newspaper rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Politcal
+:Politcal rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Radio
+:Radio rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#RadioPopolare
+:RadioPopolare rdf:type owl:NamedIndividual ,
+                        :Radio ;
+               :hasReceivedMisdirection :telephoneRecording .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#SpecialNewcast
+:SpecialNewcast rdf:type owl:NamedIndividual ,
+                         :Newcast ;
+                :hasDate "1980-08-02T12:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#Television
+:Television rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#TerzaPosizione
+:TerzaPosizione rdf:type owl:NamedIndividual ,
+                         :Organization .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre
+:bologna-massacre rdf:type owl:NamedIndividual ,
+                           :Massacre ;
+                  :hasMotivation :Politcal ;
+                  :hasPlace :Bologna ;
+                  :hasWitnessed :MassimoSparti ;
+                  :isAnnouncedThrough :SpecialNewcast ;
+                  :isOrganizedBy :FrancescaMambro ,
+                                 :LuigiCiavardini ,
+                                 :LuigiFioravanti ;
+                  :isToldBy :Newspaper ,
+                            :Radio ,
+                            :Television ;
+                  :NumberOfPublishedBooks 4 ;
+                  :NumberOfPublishedEssays 31 ;
+                  :hasDate "1980-08-02T10:25:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#people
+:people rdf:type owl:NamedIndividual ,
+                 :Agent .
+
+
+###  http://www.semanticweb.org/mO/ontologies/2020/10/mO#telephoneRecording
+:telephoneRecording rdf:type owl:NamedIndividual ,
+                             :Misdirection ;
+                    :toAccuse :people .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+: rdfs:comment "This class comprises all phenomena, E5 Events and states, which happen over a limited extent in time.This extent in time must be contiguous, i.e., without gaps. In case the defining kinds of phenomena for an instance of E2 Temporal Entity cease to happen, and occur later again at another time, we regard that the former E2 Temporal Entity has ended and a new instance has come into existence. In more intuitive terms, the same event cannot happen twice."@en .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

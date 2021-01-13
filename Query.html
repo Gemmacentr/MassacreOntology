@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta name="viewport" content="width= device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie-edge">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="ontologies/index1.html" rel="stylesheet">
+<link rel="stylesheet" href="css/query.css">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script type="text/javascript"></script>
+
+    </head>
+<body>
+<div class="navbar">
+  <a class="active" href="index.html"><i class="fa fa-home"></i> mO</a>
+  <a href="knowledgeGraph.html"><i class="	fas fa-file-archive"></i> Knowledge Graph</a>
+  <a href="Query.html"><i class="fas fa-comment"></i> Queries</a>
+  <a href="Documentation.html"><i class="fas fa-book-open"></i> Documentation</a>
+  <a href="About.html"><i class="fa fa-fw fa-user"></i> About</a>
+</div>
+
+<script>
+function query1() {
+  alert("SELECT ?x\nWHERE {\nmo:bologna-massacre mo:hasPlace ?x.\n rdflib.term.URIRef\n('http://www.semanticweb.org/mO/ontologies/2020/10/mO#Bologna')");
+}
+function query2() {
+  alert("SELECT ?x\nWHERE {\nmo:bologna-massacre mo:hasDate ?x.\n rdflib.term.Literal\n('1980-08-02T10:25:00', datatype=rdflib.term.URIRef\n('http://www.w3.org/2001/XMLSchema#dateTime'))");
+   } 
+function query3() {
+  alert("SELECT ?x\nWHERE {\nmo:bologna-massacre mo:isToldBy ?x.\n rdflib.term.URIRef\n('http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newspaper'),)");
+   }   
+function query4() {
+  alert("SELECT ?x\nWHERE {\nWHERE {mo:bologna-massacre mo:hasMotivation ?x.\n rdflib.term.URIRef\n('http://www.semanticweb.org/mO/ontologies/2020/10/mO#Politcal')");
+    
+}
+function query5() {
+  alert("SELECT ?x\nWHERE {\nWHERE {mo:bologna-massacre mo:NumberOfPublishedBooks ?x.\n rdflib.term.Literal\n('4', datatype=rdflib.term.URIRef('http://www.w3.org/2001/XMLSchema#integer')");
+       
+}   
+function query6() {
+  alert("SELECT ?x\nWHERE {\nWHERE {mo:bologna-massacre mo:NumberOfPublishedEssays ?x.\n rdflib.term.Literal\n('31', datatype=rdflib.term.URIRef('http://www.w3.org/2001/XMLSchema#integer')");
+   }   
+function query7() {
+  alert("SELECT DISTINCT \n?xWHERE {mo:bologna-massacre mo:isOrganizedBy ?x.\n rdflib.term.URIRef\n('http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiFioravanti')\nrdflib.term.URIRef\n('http://www.semanticweb.org/mO/ontologies/2020/10/mO#FrancescaMambro')\nrdflib.term.URIRef\n('http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiCiavardini')");
+       }
+function query8() {
+  alert("SELECT ?time\n WHERE {mo:bologna-massacre mo:isAnnouncedThrough ?x. \n?x mo:hasDate ?time. \n (rdflib.term.URIRef('http://www.semanticweb.org/mO/ontologies/2020/10/mO#Television')\nrdflib.term.Literal('1980-08-02T12:00:00'\n datatype=rdflib.term.URIRef\n('http://www.w3.org/2001/XMLSchema#dateTime'))");
+      
+   }   
+function query9() {
+  alert("SELECT \n(COUNT (?member) AS ?nmem)\nWHERE {mo:bologna-massacre mo:isOrganizedBy ?member.\n(rdflib.term.Literal('3', datatype=rdflib.term.URIRef('http://www.w3.org/2001/XMLSchema#integer')\n('http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiFioravanti')\nrdflib.term.URIRef\n('http://www.semanticweb.org/mO/ontologies/2020/10/mO#FrancescaMambro')\n rdflib.term.URIRef\n('http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiCiavardini')");
+   }    
+function query10() {
+  alert("SELECT ?acc \nWHERE {​​​​​​​?mis rdf:type :Misdirection :toAccuse ?acc.​​​​​​​​​​​​​​\n(rdflib.term.URIRef('http://www.semanticweb.org/mO/ontologies/2020/10/mO#people')");
+   } 
+function query11() {
+  alert("SELECT ?mis \nWHERE {​​​​​​​?mis :hasReceivedMisdirection ?x.​​​​​​​\n (rdflib.term.URIRef('http://www.semanticweb.org/mO/ontologies/2020/10/mO#RadioPopolare')");
+   } 
+function query12() {
+  alert("SELECT ?wit \nWHERE {​​​​​​​:bologna-massacre :hasWitnessed ?wit.\n(rdflib.term.URIRef('http://www.semanticweb.org/mO/ontologies/2020/10/mO#MassimoSparti')");         
+}
+
+</script>
+<body>
+<section id="box">
+<h2 class="titolo">Queries</h2>
+<div class="container">
+<p> Twelve competency questions have been identified with the intent to explore ontology and show its peculiarities.</p>
+<p><b>Clicking</b> on each square will appear the answer obtained through <b>SPARQL</b>, which is a query language for data represented through the <b>Resource Description Framework (RDF)</b>.</p>
+   <p> SPARQL is one of the key elements of paradigm-related technologies known as semantic web, and allows you to extract information from knowledge bases distributed on the web.<p><p> The RDF language describes concepts and relationships on them through the introduction of triples (subject-predicate-object), and allows the construction of queries based on triple patterns, logical conjunctions, logical disjunctions, and optional patterns.</p>
+
+</div>
+</section>
+ <section class="section1">
+           <div class="container">
+                <div class="subcontainer1">
+                    <div class="div1" onclick="query1()">
+                        <h1>Where the Massacre happened?</h1>
+                      <p>(Click here)</p>
+                    </div>
+                    <div class="div2" onclick="query2()">
+                        
+                        <h1>When the Massacre happened? </h1>
+                        <p>(Click here)</p>
+                    </div>
+                    <div class="div3" onclick="query3()">
+                        <h1>Which media told about the Massacre?</h1>
+                        <p>(Click here)</p>
+                    </div>
+               
+                </div>
+                <div class="subcontainer2">
+                    <div class="div4" onclick="query4()">
+                         <h1>Which are the motivations? </h1>
+                          <p>(Click here)</p>
+                    </div>
+                    <div class="div5" onclick="query5()">
+                         <h1>How many books have been published about it?</h1>
+                          <p>(Click here)</p>
+                    </div>
+                    <div class="div6" onclick="query6()">
+                         <h1>How many essays have been published about it?</h1>
+                        <p>(Click here)</p>
+                    </div>
+                </div>
+                <div class="subcontainer3">
+                      <div class="div7" onclick="query7()">
+                        <h1>Who organized the Massacre?</h1>
+                        <p>(Click here)</p>
+                      </div>
+                        <div class="div8" onclick="query8()">
+                         <h1>When the newcast announced the Massacre?</h1>
+                          <p>(Click here)</p>
+                        </div>
+                        <div class="div9" onclick="query9()">
+                            <h1>How many people have organized the Massacre?</h1>
+                            <p>(Click here)</p>
+                        </div>
+                </div>
+              <div class="subcontainer4">
+                      <div class="div10" onclick="query10()">
+                        <h1>Who has received the misdirection?</h1>
+                        <p>(Click here)</p>
+                      </div>
+                        <div class="div11" onclick="query11()">
+                         <h1>Who has received the misdirection?</h1>
+                          <p>(Click here)</p>
+                        </div>
+                        <div class="div12" onclick="query12()">
+                            <h1>Who are the witnesses?</h1>
+                            <p>(Click here)</p>
+                        </div>
+                </div>
+            </div> 
+        </section>
+
+
+
+
+
+
+</body>
+
+
+<footer>
+  <p>© 2020 Gemma Centrone. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

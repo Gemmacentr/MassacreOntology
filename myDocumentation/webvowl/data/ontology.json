@@ -1,0 +1,822 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/mO/ontologies/2020/10/mO" ],
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "labels" : {
+      "undefined" : "Massacre Ontology"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "46",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#HistoricalPeriod",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HistoricalPeriod"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Witness",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Witness"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#MassimoSparti",
+      "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+      "labels" : {
+        "IRI-based" : "MassimoSparti"
+      }
+    } ],
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newspaper",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Newspaper"
+    },
+    "id" : "18",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiCiavardini",
+      "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+      "labels" : {
+        "IRI-based" : "LuigiCiavardini"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#FrancescaMambro",
+      "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+      "labels" : {
+        "IRI-based" : "FrancescaMambro"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiFioravanti",
+      "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+      "labels" : {
+        "IRI-based" : "LuigiFioravanti"
+      }
+    } ],
+    "subClasses" : [ "20", "10" ],
+    "comment" : {
+      "undefined" : "an individual"
+    },
+    "id" : "11",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Massacre",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Massacre"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre",
+      "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+      "annotations" : {
+        "hasDate" : [ {
+          "identifier" : "hasDate",
+          "language" : "undefined",
+          "value" : "1980-08-02T10:25:00",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "bologna-massacre"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "This subclass wants to specifically represent an event that is a massacre. This is the focus of this ontology"
+    },
+    "id" : "21",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Book",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Book"
+    },
+    "id" : "22",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#people",
+      "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+      "labels" : {
+        "IRI-based" : "people"
+      }
+    } ],
+    "subClasses" : [ "25", "11" ],
+    "comment" : {
+      "undefined" : "An entity that interacts with the enviroment"
+    },
+    "id" : "19"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Politcal",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Politcal"
+    },
+    "id" : "27",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Source"
+    },
+    "subClasses" : [ "2" ],
+    "comment" : {
+      "undefined" : "All the elements, physical and not, that represent, have described and are useful for the memory of the event itself."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#TemporalEntity",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporalEntity"
+    },
+    "subClasses" : [ "3" ],
+    "comment" : {
+      "undefined" : "Thing that can be contained within a period of time, or change in state"
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Target",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Target"
+    },
+    "comment" : {
+      "undefined" : "A person, object, or place selected as the aim of an attack."
+    },
+    "id" : "43"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Place",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Bologna",
+      "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+      "labels" : {
+        "IRI-based" : "Bologna"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Place are usually determined by reference to the position of immoble objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks."
+    },
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Misdirection",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Misdirection"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#telephoneRecording",
+      "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+      "labels" : {
+        "IRI-based" : "telephoneRecording"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The action or process of directing someone to the wrong place or in the wrong direction"
+    },
+    "id" : "24"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Media"
+    },
+    "subClasses" : [ "18", "22", "34", "16" ],
+    "id" : "2",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "9",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "46",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Organization",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#ArmedRevolutionaryNuclei",
+      "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+      "labels" : {
+        "IRI-based" : "ArmedRevolutionaryNuclei"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#TerzaPosizione",
+      "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+      "labels" : {
+        "IRI-based" : "TerzaPosizione"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A group of people with common interests"
+    },
+    "id" : "25",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Victim",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Victim"
+    },
+    "subClasses" : [ "37" ],
+    "id" : "20",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "21" ],
+    "comment" : {
+      "undefined" : "A thing that happens or takes place, especially one of importance."
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Reason",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reason"
+    },
+    "subClasses" : [ "27", "31" ],
+    "comment" : {
+      "undefined" : "a cause, explanation, or justification for an event"
+    },
+    "id" : "28"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Radio",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Radio"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#RadioPopolare",
+      "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+      "labels" : {
+        "IRI-based" : "RadioPopolare"
+      }
+    } ],
+    "id" : "34",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Religious",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Religious"
+    },
+    "id" : "31",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Commoner",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Commoner"
+    },
+    "id" : "37",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newcast",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Newcast"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#SpecialNewcast",
+      "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+      "annotations" : {
+        "hasDate" : [ {
+          "identifier" : "hasDate",
+          "language" : "undefined",
+          "value" : "1980-08-02T12:00:00",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SpecialNewcast"
+      }
+    } ],
+    "id" : "15",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Television",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Television"
+    },
+    "subClasses" : [ "15" ],
+    "id" : "16",
+    "superClasses" : [ "2" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAnnouncedThrough",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isAnnouncedThrough"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasPlace",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasPlace"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "9",
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedEssays",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "NumberOfPublishedEssays"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasIntervalStartDate",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasIntervalStartDate"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasReceivedMisdirection",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasReceivedMisdirection"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "range" : "28",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "6",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "28",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#itHappenedIn",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "itHappenedIn"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "range" : "2",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "2",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "20",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "2",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "1",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasMotivation",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasMotivation"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "range" : "2",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#toAccuse",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "toAccuse"
+    },
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "range" : "11",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "19",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "19",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#isToldBy",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isToldBy"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "range" : "11",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedBooks",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "NumberOfPublishedBooks"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#member",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "member"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasWitnessed",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasWitnessed"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAimedAtHit",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "isAimedAtHit"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDateAndTime",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasDateAndTime"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#isOrganizedBy",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isOrganizedBy"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#isPubblicatedThrough",
+    "baseIri" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "isPubblicatedThrough"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "60"
+  } ]
+}

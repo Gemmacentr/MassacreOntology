@@ -1,0 +1,415 @@
+[ {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Massacre Ontology"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class comprises all phenomena, E5 Events and states, which happen over a limited extent in time.This extent in time must be contiguous, i.e., without gaps. In case the defining kinds of phenomena for an instance of E2 Temporal Entity cease to happen, and occur later again at another time, we regard that the former E2 Temporal Entity has ended and a new instance has come into existence. In more intuitive terms, the same event cannot happen twice."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An entity that interacts with the enviroment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#ArmedRevolutionaryNuclei",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Organization" ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Bologna",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Place" ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Book",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Commoner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Victim"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A thing that happens or takes place, especially one of importance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#FrancescaMambro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person" ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#member" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#ArmedRevolutionaryNuclei"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#HistoricalPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiCiavardini",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person" ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#member" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#TerzaPosizione"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiFioravanti",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person" ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#member" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#ArmedRevolutionaryNuclei"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Massacre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This subclass wants to specifically represent an event that is a massacre. This is the focus of this ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#MassimoSparti",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Witness" ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Misdirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The action or process of directing someone to the wrong place or in the wrong direction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newcast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Television"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newspaper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedBooks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedEssays",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A group of people with common interests"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an individual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Place are usually determined by reference to the position of immoble objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Politcal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Reason"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Radio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#RadioPopolare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Radio" ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasReceivedMisdirection" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#telephoneRecording"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Reason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a cause, explanation, or justification for an event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Religious",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Reason"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "All the elements, physical and not, that represent, have described and are useful for the memory of the event itself."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#SpecialNewcast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newcast" ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1980-08-02T12:00:00"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Target",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person, object, or place selected as the aim of an attack."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Television",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#TemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Thing that can be contained within a period of time, or change in state"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#TerzaPosizione",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Organization" ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Victim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Witness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#bologna-massacre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Massacre" ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedBooks" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#NumberOfPublishedEssays" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "31"
+  } ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1980-08-02T10:25:00"
+  } ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasMotivation" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Politcal"
+  } ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasPlace" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Bologna"
+  } ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasWitnessed" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#MassimoSparti"
+  } ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAnnouncedThrough" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#SpecialNewcast"
+  } ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#isOrganizedBy" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#FrancescaMambro"
+  }, {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiCiavardini"
+  }, {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#LuigiFioravanti"
+  } ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#isToldBy" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Newspaper"
+  }, {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Radio"
+  }, {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Television"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasDateAndTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasIntervalStartDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasMotivation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Reason"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasPlace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasReceivedMisdirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Misdirection"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#hasWitnessed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Massacre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAimedAtHit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Massacre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Target"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#isAnnouncedThrough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Media"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#isOrganizedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#isPubblicatedThrough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#isToldBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Source"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#itHappenedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#member",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#people",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent" ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#telephoneRecording",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Misdirection" ],
+  "http://www.semanticweb.org/mO/ontologies/2020/10/mO#toAccuse" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#people"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#toAccuse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Misdirection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mO/ontologies/2020/10/mO#Agent"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#FunctionalProperty" ]
+} ]
